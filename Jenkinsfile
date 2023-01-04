@@ -6,7 +6,7 @@ node {
     def newApp
     def registry = 'agarciaf/microservices-node-todo-frontend'
     def registryCredential = 'dockerhub'
-	
+	tools {nodejs "node"}
 	stage('Git') {
 		git 'https://github.com/agarciafer/node-todo-frontend'
 	}
